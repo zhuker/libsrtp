@@ -243,7 +243,7 @@ add_library(srtp2
   ${SOURCES_H}
 )
 
-set_target_properties(srtp2 PROPERTIES VERSION ${CMAKE_PROJECT_VERSION})
+set_target_properties(srtp2 PROPERTIES VERSION ${PROJECT_VERSION})
 
 target_include_directories(srtp2 PUBLIC crypto/include include)
 if(ENABLE_OPENSSL)
